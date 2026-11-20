@@ -8,7 +8,7 @@ const SAMPLE_IMAGES = [
   { label: '🌟 🫘 Rajma Rice Thali (100% Detected)', file: 'thali_rajma_rice.jpg' },
   { label: '🌟 🥞 Idli Dosa South Indian (100% Detected)', file: 'thali_idli_dosa.jpg' },
   { label: '🌟 🥟 Poha Samosa Breakfast (100% Detected)', file: 'thali_poha_samosa.jpg' },
-  { label: '🌟 🍚 Biryani & Coconut Chutney Thali (100% Detected)', file: 'thali_biryani_coconut.jpg' },
+  { label: '🌟 🍚 Biryani & Kheer Thali (100% Detected)', file: 'thali_biryani_kheer2.jpg' },
   { label: '👑 🍱 Royal Indian Thali (9 Dishes Detected)', file: 'royal_thali_10_dishes.jpg' },
   { label: '👑 🍱 Grand Maharaja Feast (14+ Dishes Detected)', file: 'maharaja_thali_18_dishes.jpg' },
   { label: '🍱 Poori & Rice Thali', file: 'thali_poori_rice.jpg' },
