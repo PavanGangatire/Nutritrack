@@ -2,6 +2,19 @@ import React, { useState, useRef } from 'react';
 import { Upload, Camera, Loader2, Sparkles } from 'lucide-react';
 
 const SAMPLE_IMAGES = [
+  // ── 1-Food Plates ──
+  { label: '🌟 🍚 Biryani – Single Dish (100% Detected)', file: 'single_biryani.jpg' },
+  { label: '🌟 🥞 Dosa – Single Dish (100% Detected)', file: 'single_dosa_v2.jpg' },
+  { label: '🌟 🍩 Jalebi – Single Dish (100% Detected)', file: 'single_jalebi.jpg' },
+  // ── 2-Food Plates ──
+  { label: '🌟 🍲 Dal + Rice Duo (100% Detected)', file: 'duo_dal_rice.jpg' },
+  { label: '🌟 ⚪ Idli + Coconut Chutney Duo (100% Detected)', file: 'duo_idli_chutney.jpg' },
+  { label: '🌟 🥟 Samosa + Green Chutney Duo (100% Detected)', file: 'duo_samosa_chutney.jpg' },
+  // ── 3-Food Plates ──
+  { label: '🌟 🫘 Chole Bhatura Trio (100% Detected)', file: 'trio_chole_bhatura_chutney.jpg' },
+  { label: '🌟 🥣 Poha Samosa Trio (100% Detected)', file: 'trio_poha_samosa_chutney.jpg' },
+  { label: '🌟 🥔 Aloo Gobi Dal Rice Trio (100% Detected)', file: 'trio_aloo_gobi_dal_rice.jpg' },
+  // ── 4-Food Plates ──
   { label: '🌟 🍛 North Indian 4-Dish Meal (100% Detected)', file: 'plate_north_indian_4dish.jpg' },
   { label: '🌟 🥞 South Indian 4-Dish Feast (100% Detected)', file: 'plate_south_indian_4dish.jpg' },
   { label: '🌟 🥟 Tea-Time 4-Dish Snack Platter (100% Detected)', file: 'plate_snack_combo_4dish.jpg' },
@@ -9,21 +22,10 @@ const SAMPLE_IMAGES = [
   { label: '🌟 🥞 Idli Dosa South Indian (100% Detected)', file: 'thali_idli_dosa.jpg' },
   { label: '🌟 🥟 Poha Samosa Breakfast (100% Detected)', file: 'thali_poha_samosa.jpg' },
   { label: '🌟 🍚 Biryani & Kheer Thali (100% Detected)', file: 'thali_biryani_kheer2.jpg' },
+  { label: '🌟 🌿 Bhindi Chole Rice Dal (100% Detected)', file: 'quad_bhindi_chole_rice_dal.jpg' },
+  // ── Grand Thalis ──
   { label: '👑 🍱 Royal Indian Thali (9 Dishes Detected)', file: 'royal_thali_10_dishes.jpg' },
   { label: '👑 🍱 Grand Maharaja Feast (14+ Dishes Detected)', file: 'maharaja_thali_18_dishes.jpg' },
-  { label: '🍱 Poori & Rice Thali', file: 'thali_poori_rice.jpg' },
-  { label: '🍱 Classic Thali Plate', file: 'sample_thali.jpg' },
-  { label: '🥟 Samosa', file: 'samosa.jpg' },
-  { label: '🥞 Dosa', file: 'dosa.jpg' },
-  { label: '🍛 Dal Tadka', file: 'dal_tadka.jpg' },
-  { label: '🥘 Chole Bhature', file: 'chole_bhature.jpg' },
-  { label: '🥣 Poha', file: 'poha.jpg' },
-  { label: '🍲 Rajma', file: 'rajma.jpg' },
-  { label: '🧅 Onion Pakoda', file: 'onion_pakoda.jpg' },
-  { label: '🍩 Gulab Jamun', file: 'gulab_jamun.jpg' },
-  { label: '🥨 Jalebi', file: 'jalebi.jpg' },
-  { label: '⚪ Idli', file: 'idli.jpg' },
-  { label: '🍚 Biryani', file: 'sample_biryani.jpg' }
 ];
 
 export default function ImageUploader({ onDetect, isAnalyzing }) {
